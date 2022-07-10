@@ -68,7 +68,7 @@
     <p>
       فایل library/config.php را باز کنید.
       
-      <br></br>
+      <br>
       <script src="https://gist.github.com/DeAref/ed65d803474924228d5c6d2f3b3835bc.js"></script>
       خط 4 و 16 و 17 را ادیت کنید 
       

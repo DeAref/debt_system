@@ -16,7 +16,7 @@
   
   </p>
 <script src="https://gist.github.com/DeAref/e3344779f3566be03bd3e04b82fc5fee.js"></script>
-          
+          </br>
 <strong> 
   روش دوم: 
    </strong>

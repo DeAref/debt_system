@@ -1,14 +1,16 @@
-<div dir='rtl' align='right'><h1>فهرست</h1>
+<div dir='rtl' align='right'>
+  
+<h1>فهرست</h1>
 <ul>
   <li> <a href="#howtoinstall">نحوه نصب</a>
     <ul>
       <li>ساختن پایگاه داده </li>
       <li>وارد کردن پایگاه داده</li>
       <li>اتصال پایگاه داده </li>
-    <ul>  
-      </li>
-  <li> <a href="howtoinstall"></a></li>
- <li> <a href="howtoinstall"></a></li>
+    </ul>  
+  </li>
+  <li> <a href="howtoinstall">test</a></li>
+ <li> <a href="howtoinstall">test</a></li>
 </ul>
 
 

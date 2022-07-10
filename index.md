@@ -45,5 +45,13 @@
     <h2>
     وارد کرده پایگاه داده
     </h2>
-فایل 
+<p>
+  
+  فایل دیتا بیس را دانلود کرده و سپس در phpMyadmin ایمپورت کنید 
+  لینک فایل دیتابیس: 
+  <br>
+  <a href="https://github.com/DeAref/debt_system/blob/main/database/debt.sql">
+  https://github.com/DeAref/debt_system/blob/main/database/debt.sql
+  </a>
+    </p>
 </div>

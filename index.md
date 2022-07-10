@@ -3,7 +3,8 @@
   <li> <a href="#howtoinstall">نحوه نصب</a>
     <ul>
       <li>ساختن پایگاه داده </li>
-      <li> اتصال پایگاه داده </li>
+      <li>وارد کردن پایگاه داده</li>
+      <li>اتصال پایگاه داده</li>
     <ul>  
   </li>
   <li> <a href="howtoinstall"></a></li>
@@ -33,7 +34,7 @@
  <img src="https://user-images.githubusercontent.com/95649368/178138292-91d0bcbb-bde2-4818-89f3-5d520c6323d6.png" width="500px"/>
  
     <br>
-    <h1>ساخت پایگاه داده</h1>
+    <h2>ساخت پایگاه داده</h2>
     <p>
    
  برای ساخت پایگاه داده ، وارد phpmyadmin شوید. سپس کوری زیر را اجرا کنید
@@ -41,6 +42,8 @@
     </p>
   <br>
  <script src="https://gist.github.com/DeAref/522a1ebde9c0586c0c774a4ee0b39d3a.js"></script>
- 
-
+    <h2>
+    وارد کرده پایگاه داده
+    </h2>
+فایل 
 </div>

@@ -70,7 +70,12 @@
       
       <br>
       <script src="https://gist.github.com/DeAref/ed65d803474924228d5c6d2f3b3835bc.js"></script>
-      خط 4 و 16 و 17 را ادیت کنید 
+      خط 4 و 16 و 17 را ادیت کنید.
+      
+      سپس فایل admin/config.php را باز کنید 
+      <script src="https://gist.github.com/DeAref/af1749cfca3b28c2711b57798a81a3da.js"></script>
+      <br>
+      و خط 3 و 4 و 5 و 19 را ادیت کنید.
       
   </p>
     

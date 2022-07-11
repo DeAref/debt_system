@@ -18,17 +18,17 @@
 <p>
   <strong> 
     روش اول:
-  </strong><br>
+  </strong>
+<br>
   ابتدا یک فورک از ریپازیتوری بگیرید
   برای اینکار کامند های زیر را در cmd وارد کنید
-  
-  </p>
+</p>
 <script src="https://gist.github.com/DeAref/e3344779f3566be03bd3e04b82fc5fee.js"></script>
-          <br>
+<br>
 <strong> 
   روش دوم: 
-   </strong>
-  <p>
+</strong>
+<p>
   به صورت دستی فورک کنید و سپس فایل را دانلود کنید
   </p>
   <br>
@@ -36,7 +36,6 @@
  <img src="https://user-images.githubusercontent.com/95649368/178138292-91d0bcbb-bde2-4818-89f3-5d520c6323d6.png" width="500px"/>
  
   <br>
-    
   <h3>ساخت پایگاه داده</h3>
 <p>
    
@@ -46,9 +45,9 @@
     
   <br>
  <script src="https://gist.github.com/DeAref/522a1ebde9c0586c0c774a4ee0b39d3a.js"></script>
-    <h3>
+ <h3>
     وارد کرده پایگاه داده
-    </h3>
+ </h3>
   
 <p>
   
@@ -65,25 +64,25 @@
   اتصال پایگاه داده
  
   </h3>
-    <p>
+  <p>
       فایل library/config.php را باز کنید.
       
-      <br>
-      <script src="https://gist.github.com/DeAref/ed65d803474924228d5c6d2f3b3835bc.js"></script>
+  <br>
+  <script src="https://gist.github.com/DeAref/ed65d803474924228d5c6d2f3b3835bc.js"></script>
       خط 4 و 16 و 17 را ادیت کنید.
-      <br>
+  <br>
       
       سپس فایل admin/config.php را باز کنید 
-      <script src="https://gist.github.com/DeAref/af1749cfca3b28c2711b57798a81a3da.js"></script>
-      <br>
+  <script src="https://gist.github.com/DeAref/af1749cfca3b28c2711b57798a81a3da.js"></script>
+  <br>
       و خط 3 و 4 و 5 و 19 را ادیت کنید.
       
   </p>
-    <p>
+  <p>
       در نهایت فایل .htaccess را ادیت کنید و آدرس دامین خودتون رو بزارید تا صفحه 404 رو بتونه پیدا کنه.
       
-      <br>
-      <strong> تمام. حالا سامانه راه اندازی شد </strong>
+  <br>
+  <strong> تمام. حالا سامانه راه اندازی شد </strong>
   </p>
   <h1>ساختار برنامه</h1>
   <h3> نقشه سایت</h3>
@@ -114,8 +113,13 @@
   این پوشه فایل های css - js فونت ها و تصاویر رو در برگرفته
   </p>
   
-    <h4>پوشه library</h4>
+  <h4>پوشه library</h4>
   <p>
   این پوشه حاوی کتابخونه هایی هست که در برنامه استفاده شده ، همینطور فایل های هدر و فوتر و ثبت نام در اینمجا قرار دارد
+  </p>
+  
+  <h4>پوشه uploads</h4>
+  <p>
+  عکس پروفایل هایی که توسط کاربران و مدیران اپلود میشوند در این پوشه قرار میگیرد 
   </p>
 </div>

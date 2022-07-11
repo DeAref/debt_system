@@ -94,7 +94,12 @@
   
   </p>
   <img src="https://user-images.githubusercontent.com/95649368/178249509-41e2a794-7b61-43b4-a5ca-44f68a6014e9.png" href="https://www.gloomaps.com/oDQRcmpHlY"/>
-
+  <h3>ساختار پایگاه داده</h3>
+  <p> 
+  دیتابیس از 6 جدول تشکیل شده که در پایین میتونید ساختار بصری اون رو ببینید
+    
+  </p>
+   <img src="https://user-images.githubusercontent.com/95649368/178250730-14cc9b92-9841-4676-b9fe-e38f2402940b.png" href="https://www.gloomaps.com/oDQRcmpHlY"/>
 
 
 </div>

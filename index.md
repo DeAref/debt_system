@@ -37,7 +37,7 @@
  
   <br>
     
-  <h2>ساخت پایگاه داده</h2>
+  <h3>ساخت پایگاه داده</h3>
 <p>
    
  برای ساخت پایگاه داده ، وارد phpmyadmin شوید. سپس کوری زیر را اجرا کنید
@@ -46,9 +46,9 @@
     
   <br>
  <script src="https://gist.github.com/DeAref/522a1ebde9c0586c0c774a4ee0b39d3a.js"></script>
-    <h2>
+    <h3>
     وارد کرده پایگاه داده
-    </h2>
+    </h3>
   
 <p>
   
@@ -61,10 +61,10 @@
   
   </p>
     
-  <h2>
+  <h3>
   اتصال پایگاه داده
  
-  </h2>
+  </h3>
     <p>
       فایل library/config.php را باز کنید.
       
@@ -93,6 +93,8 @@
 
   
   </p>
-  <img src="https://user-images.githubusercontent.com/95649368/178247759-6c1861eb-175e-4d4b-8e35-8c6fbfe0ebe0.png"/>
-    
+  <img src="https://user-images.githubusercontent.com/95649368/178249509-41e2a794-7b61-43b4-a5ca-44f68a6014e9.png" href="https://www.gloomaps.com/oDQRcmpHlY"/>
+
+
+
 </div>

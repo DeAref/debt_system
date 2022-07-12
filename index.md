@@ -175,4 +175,13 @@
  خط 112 به پایین هم پسوند متن رو معلوم و ذخیره میکنه (kB - GB - TB - B)
   <script src="https://gist.github.com/DeAref/1447f37fba368e4b3816f0240cd1464a.js"></script>
 </p>
+<h4>
+فایل dateTime.php  
+</h4>
+<p>
+توی این فایل توابعی رو نوشتم که میتونن تاریخ رو بگیرن و یک روز/ماه/سال عقب جلو کنن
+  <br>
+  مثال استفاده :
+  <script src="https://gist.github.com/DeAref/f332d52c2c0e1f24fa75669710c8a296.js"></script>
+</p>
 </div>

@@ -184,4 +184,11 @@
   مثال استفاده :
   <script src="https://gist.github.com/DeAref/f332d52c2c0e1f24fa75669710c8a296.js"></script>
 </p>
+<h5>
+  تابع differenceDate
+</h5>
+<p>
+  این تابع تفاوت بین تاریخی که بهش میدید و تاریخی که الان توش قرار داریم رو محاسبه میکنه و خروجی میده 
+  <pre>differenceDate($now,$yourDate);</pre>
+</p>
 </div>

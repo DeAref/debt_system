@@ -11,20 +11,34 @@
     <li><a href="#2"> اتصال پایگاه داده </li>
   </ul>  
 </li>
-<li> <a href="howtoinstall">ساختار برنامه</a>
+<li> <a href="#3">ساختار برنامه</a>
   
 <ul>
-  <li><a href="#3"> نقشه سایت </a></li>
-  <li><a href="#4"> ساختار پایگاه داده </a></li>
-  <li><a href="#5"> ساختار کد ها </a></li>
-  <li><a href="#6">پوشه dist</a></li>
-  <li><a href="#7">پوشه library </li>
-  <li><a href="#8">پوشه plugins </a></li>
-  <li><a href="#9">پوشه uploads</a></li>
-  <li><a href="#10">پوشه idea </li>
+  <li><a href="#4"> نقشه سایت </a></li>
+  <li><a href="#5"> ساختار پایگاه داده </a></li>
+  <li><a href="#6"> ساختار کد ها </a></li>
+  <li><a href="#7">پوشه dist</a></li>
+  <li><a href="#8">پوشه library </li>
+  <li><a href="#9">پوشه plugins </a></li>
+  <li><a href="#10">پوشه uploads</a></li>
+  <li><a href="#11">پوشه idea </li>
 </ul>    
 </li>
-<li> <a href="howtoinstall">test</a></li>
+<li> <a href="#-----">کتابخونه ها </a>
+  
+<ul>
+  <li><a href="#4"> فایل Config.php </a></li>
+  <li><a href="#5">  فایل header.php </a></li>
+  <li><a href="#6"> فایل footer.php</a></li>
+  <li><a href="#7">فایل register.php </a></li>
+  <li><a href="#8">فایل resource_usage.php </li>
+  <li><a href="#9">فایل dateTime.php </a>
+    <ul> <li> <a href="#"> تابع differenceDate</a></li></ul>
+  </li>
+  <li><a href="#10">فایل rndStr.php</a></li>
+  <li><a href="#11">فایل tax.php </li>
+</ul>    
+</li>
 </ul>
 
 

@@ -3,13 +3,13 @@
 <h1>فهرست</h1>
 <ul>
 <li> <a href="#howtoinstall">نحوه نصب</a>
-  <ul>
+<ul>
 <li><a href="#way1">   روش دوم </a></li>
 <li><a href="#way2">  روش اول </a></li>
 <li><a href="#createDB"> ساختن پایگاه داده </a></li>
 <li><a href="#1"> وارد کردن پایگاه داده</a></li>
 <li><a href="#2"> اتصال پایگاه داده </li>
-  </ul>  
+</ul>  
 </li>
 <li> <a href="#3">ساختار برنامه</a>
   

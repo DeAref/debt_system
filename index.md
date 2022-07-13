@@ -4,39 +4,39 @@
 <ul>
 <li> <a href="#howtoinstall">نحوه نصب</a>
   <ul>
-    <li><a href="#way1">   روش دوم </a></li>
-    <li><a href="#way2">  روش اول </a></li>
-    <li><a href="#createDB"> ساختن پایگاه داده </a></li>
-    <li><a href="#1"> وارد کردن پایگاه داده</a></li>
-    <li><a href="#2"> اتصال پایگاه داده </li>
+<li><a href="#way1">   روش دوم </a></li>
+<li><a href="#way2">  روش اول </a></li>
+<li><a href="#createDB"> ساختن پایگاه داده </a></li>
+<li><a href="#1"> وارد کردن پایگاه داده</a></li>
+<li><a href="#2"> اتصال پایگاه داده </li>
   </ul>  
 </li>
 <li> <a href="#3">ساختار برنامه</a>
   
 <ul>
-  <li><a href="#4"> نقشه سایت </a></li>
-  <li><a href="#5"> ساختار پایگاه داده </a></li>
-  <li><a href="#6"> ساختار کد ها </a></li>
-  <li><a href="#7">پوشه dist</a></li>
-  <li><a href="#8">پوشه library </li>
-  <li><a href="#9">پوشه plugins </a></li>
-  <li><a href="#10">پوشه uploads</a></li>
-  <li><a href="#11">پوشه idea </li>
+<li><a href="#4"> نقشه سایت </a></li>
+<li><a href="#5"> ساختار پایگاه داده </a></li>
+<li><a href="#6"> ساختار کد ها </a></li>
+<li><a href="#7">پوشه dist</a></li>
+<li><a href="#8">پوشه library </li>
+<li><a href="#9">پوشه plugins </a></li>
+<li><a href="#10">پوشه uploads</a></li>
+<li><a href="#11">پوشه idea </li>
 </ul>    
 </li>
 <li> <a href="#12">کتابخونه ها </a>
   
 <ul>
-  <li><a href="#13"> فایل Config.php </a></li>
-  <li><a href="#14">  فایل header.php </a></li>
-  <li><a href="#15"> فایل footer.php</a></li>
-  <li><a href="#16">فایل register.php </a></li>
-  <li><a href="#17">فایل resource_usage.php </li>
-  <li><a href="#18">فایل dateTime.php </a>
-    <ul> <li> <a href="#19"> تابع differenceDate</a></li></ul>
-  </li>
-  <li><a href="#20">فایل rndStr.php</a></li>
-  <li><a href="#21">فایل tax.php </li>
+<li><a href="#13"> فایل Config.php </a></li>
+<li><a href="#14">  فایل header.php </a></li>
+<li><a href="#15"> فایل footer.php</a></li>
+<li><a href="#16">فایل register.php </a></li>
+<li><a href="#17">فایل resource_usage.php </li>
+<li><a href="#18">فایل dateTime.php </a>
+  <ul> <li> <a href="#19"> تابع differenceDate</a></li></ul>
+</li>
+<li><a href="#20">فایل rndStr.php</a></li>
+<li><a href="#21">فایل tax.php </li>
 </ul>    
 </li>
 </ul>

@@ -4,9 +4,9 @@
 <ul>
   <li> <a href="#howtoinstall">نحوه نصب</a>
     <ul>
-      <li href="#1">ساختن پایگاه داده </li>
-      <li>وارد کردن پایگاه داده</li>
-      <li>اتصال پایگاه داده </li>
+      <li><a href="#1"> ساختن پایگاه داده </a></li>
+      <li><a href="#2"> وارد کردن پایگاه داده</a></li>
+      <li><a href="#3"> اتصال پایگاه داده </li>
     </ul>  
   </li>
   <li> <a href="howtoinstall">test</a></li>

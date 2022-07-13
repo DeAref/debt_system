@@ -1,4 +1,5 @@
 theme: jekyll-theme-cayman
 show_downloads: ["true"]
-zip_url: https://5ip.ir/debt/debt.zip
-Demo: https://5ip.ir/debt/
+github:
+  zip_url: https://5ip.ir/debt/debt.zip
+  Demo: https://5ip.ir/debt/

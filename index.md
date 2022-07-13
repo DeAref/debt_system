@@ -4,7 +4,9 @@
 <ul>
   <li> <a href="#howtoinstall">نحوه نصب</a>
     <ul>
-      <li><a href="#1"> ساختن پایگاه داده </a></li>
+      <li><a href="#way1">   روش دوم </a></li>
+      <li><a href="#way2">  روش اول </a></li>
+      <li><a href="#createDB"> ساختن پایگاه داده </a></li>
       <li><a href="#2"> وارد کردن پایگاه داده</a></li>
       <li><a href="#3"> اتصال پایگاه داده </li>
     </ul>  
@@ -15,19 +17,20 @@
 
 
 <h1 id="howtoinstall">نحوه نصب</h1>
-<p>
-  <strong> 
+
+  <h3 id="way1"> 
     روش اول:
-  </strong>
+  </h3>
+<p>
 <br>
   ابتدا یک فورک از ریپازیتوری بگیرید
   برای اینکار کامند های زیر را در cmd وارد کنید
 </p>
 <script src="https://gist.github.com/DeAref/e3344779f3566be03bd3e04b82fc5fee.js"></script>
 <br>
-<strong> 
-  روش دوم: 
-</strong>
+ <h3 id="way2"> 
+    روش دوم:
+  </h3>
 <p>
   به صورت دستی فورک کنید و سپس فایل را دانلود کنید
   </p>
@@ -36,7 +39,7 @@
  <img src="https://user-images.githubusercontent.com/95649368/178138292-91d0bcbb-bde2-4818-89f3-5d520c6323d6.png" width="500px"/>
  
   <br>
-  <h3>ساخت پایگاه داده</h3>
+  <h3 id="createDb">ساخت پایگاه داده</h3>
 <p>
    
  برای ساخت پایگاه داده ، وارد phpmyadmin شوید. سپس کوری زیر را اجرا کنید

@@ -241,7 +241,7 @@ tax($Percent,$Value);
 </pre>
 </p>
 <hr>
-<h2 class="button"><a href="https://5ip.ir/debt">Live Demo</a></h2>
+<h2 dir="ltr" class="button"><a href="https://5ip.ir/debt">Live Demo</a></h2>
 <table dir="ltr">
   <thead>
     <tr>

@@ -2,17 +2,29 @@
   
 <h1>فهرست</h1>
 <ul>
-  <li> <a href="#howtoinstall">نحوه نصب</a>
-    <ul>
-      <li><a href="#way1">   روش دوم </a></li>
-      <li><a href="#way2">  روش اول </a></li>
-      <li><a href="#createDB"> ساختن پایگاه داده </a></li>
-      <li><a href="#2"> وارد کردن پایگاه داده</a></li>
-      <li><a href="#3"> اتصال پایگاه داده </li>
-    </ul>  
-  </li>
-  <li> <a href="howtoinstall">test</a></li>
- <li> <a href="howtoinstall">test</a></li>
+<li> <a href="#howtoinstall">نحوه نصب</a>
+  <ul>
+    <li><a href="#way1">   روش دوم </a></li>
+    <li><a href="#way2">  روش اول </a></li>
+    <li><a href="#createDB"> ساختن پایگاه داده </a></li>
+    <li><a href="#1"> وارد کردن پایگاه داده</a></li>
+    <li><a href="#2"> اتصال پایگاه داده </li>
+  </ul>  
+</li>
+<li> <a href="howtoinstall">ساختار برنامه</a>
+  
+<ul>
+  <li><a href="#3"> نقشه سایت </a></li>
+  <li><a href="#4"> ساختار پایگاه داده </a></li>
+  <li><a href="#5"> ساختار کد ها </a></li>
+  <li><a href="#6">پوشه dist</a></li>
+  <li><a href="#7">پوشه library </li>
+  <li><a href="#8">پوشه plugins </a></li>
+  <li><a href="#9">پوشه uploads</a></li>
+  <li><a href="#10">پوشه idea </li>
+</ul>    
+</li>
+<li> <a href="howtoinstall">test</a></li>
 </ul>
 
 

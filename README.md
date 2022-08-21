@@ -241,7 +241,35 @@ $loginAddress = "http://localhost/dept/client/login.php";
   <br>
   
  خط 112 به پایین هم پسوند متن رو معلوم و ذخیره میکنه (kB - GB - TB - B)
-  <script src="https://gist.github.com/DeAref/1447f37fba368e4b3816f0240cd1464a.js"></script>
+  <pre dir="ltr"> function formatSizeUnits($bytes)
+{
+    if ($bytes >= 1073741824)
+    {
+        $bytes = number_format($bytes / 1073741824, 2) . ' GB';
+    }
+    elseif ($bytes >= 1048576)
+    {
+        $bytes = number_format($bytes / 1048576, 2) . ' MB';
+    }
+    elseif ($bytes >= 1024)
+    {
+        $bytes = number_format($bytes / 1024, 2) . ' KB';
+    }
+    elseif ($bytes > 1)
+    {
+        $bytes = $bytes . ' bytes';
+    }
+    elseif ($bytes == 1)
+    {
+        $bytes = $bytes . ' byte';
+    }
+    else
+    {
+        $bytes = '0 bytes';
+    }
+
+    return $bytes;
+}</pre>
 </p>
 <h4 id="18">
 فایل dateTime.php  
@@ -250,7 +278,7 @@ $loginAddress = "http://localhost/dept/client/login.php";
 توی این فایل توابعی رو نوشتم که میتونن تاریخ رو بگیرن و یک روز/ماه/سال عقب جلو کنن
   <br>
   مثال استفاده :
-  <script src="https://gist.github.com/DeAref/f332d52c2c0e1f24fa75669710c8a296.js"></script>
+ <pre dir="ltr">echo pre2Day("2022-02-10");</pre>
 </p>
 <h5 id="19">
   تابع differenceDate

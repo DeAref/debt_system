@@ -333,3 +333,10 @@ tax($Percent,$Value);
   </tbody>
 </table>
 </div>
+
+<hr>
+<h1 align="left">Contact me</h1>
+<h4 align="left"><a href="https://t.me/DeAref">Telegram</a></h4>
+<h4 align="left"><a href="https://t.me/ProgrammingEngineer1">Telegram Channel</a></h4>
+<h4 align="left"><a href="mailto://aref@post.ir">Email</a></h4>
+<h4 align="left"><a href="https://t.me/AppDuny">AppDuny</a></h4>

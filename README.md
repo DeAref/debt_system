@@ -55,7 +55,8 @@ Debt System | Create an account, get a Debt, pay the installments. Or give Debt,
   ابتدا یک فورک از ریپازیتوری بگیرید
   برای اینکار کامند های زیر را در cmd وارد کنید
 </p>
-<script src="https://gist.github.com/DeAref/e3344779f3566be03bd3e04b82fc5fee.js"></script>
+  <pre>cd c://wamp64/www
+git clone https://github.com/DeAref/debt_system.git</pre>
 <br>
  <h3 id="way2"> 
     روش دوم:
@@ -76,7 +77,7 @@ Debt System | Create an account, get a Debt, pay the installments. Or give Debt,
 </p>
     
   <br>
- <script src="https://gist.github.com/DeAref/522a1ebde9c0586c0c774a4ee0b39d3a.js"></script>
+  <pre>CREATE DATABASE debt CHARACTER SET utf8 COLLATE utf8_general_ci</pre>
  <h3 id="1">
     وارد کرده پایگاه داده
  </h3>
@@ -100,12 +101,47 @@ Debt System | Create an account, get a Debt, pay the installments. Or give Debt,
       فایل library/config.php را باز کنید.
       
   <br>
-  <script src="https://gist.github.com/DeAref/ed65d803474924228d5c6d2f3b3835bc.js"></script>
+  <pre dir="ltr">
+
+//..................... localhost...username...password.....database name.....//
+$conn = mysqli_connect("localhost", "root", "", "debt");
+//mysql_set_charset('utf8', $conn);
+// mysqli_query($conn, "SET NAMES utf8");
+// mysqli_query($conn, "SET CHARACTER SET utf8");
+//mysqli_query($conn, "SET character_set_connection = utf8");
+$sumDeptValue = 0;
+$sumPayed = 0;
+$sumMonthCount = 0;
+$sumUnPayed= 0 ;
+$systemDate = date('y-m-d');
+$systemTime = date('h:i:s');
+$systemDateTime = date('y-m-d | h:i:s');
+$loginAddress = "http://5ip.ir/debt/client/login.php";
+$Domain= "http://5ip.ir";</pre>
       خط 4 و 16 و 17 را ادیت کنید.
   <br>
       
       سپس فایل admin/config.php را باز کنید 
-  <script src="https://gist.github.com/DeAref/af1749cfca3b28c2711b57798a81a3da.js"></script>
+  <pre dir="ltr" align="right">
+$host = "localhost";
+$usernameDBmySql = "debt";
+$passwordDBmySql = "";
+$databaseNameMysql = "debt";
+//.............................. localhost...username.......password..............database name.....//
+$conn = mysqli_connect($host, $usernameDBmySql, $passwordDBmySql,$databaseNameMysql);
+
+//mysqli_set_charset($conn,'utf8');
+// mysqli_query($conn, "SET NAMES utf8");
+// mysqli_query($conn, "SET CHARACTER SET utf8");
+//mysqli_query($conn, "SET character_set_connection = utf8");
+$sumDeptValue = 0;
+$sumPayed = 0;
+$sumMonthCount = 0;
+$sumUnPayed= 0 ;
+$systemDate = date('y-m-d');
+$systemTime = date('h:i:s');
+$loginAddress = "http://localhost/dept/client/login.php";
+</pre>
   <br>
       و خط 3 و 4 و 5 و 19 را ادیت کنید.
       

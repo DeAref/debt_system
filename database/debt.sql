@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jul 10, 2022 at 04:17 PM
+-- Generation Time: Jul 13, 2022 at 03:12 PM
 -- Server version: 5.7.36
 -- PHP Version: 7.4.30
 
@@ -106,7 +106,8 @@ INSERT INTO `dept` (`id`, `user_id`, `deptValue`, `monthCount`, `unPayed`, `paye
 (35, 3, 10000000, 12, 12, 1, 833333, 1, '2022-06-22'),
 (34, 3, 30000000, 24, 24, 0, 1250000, 1, '2022-06-22'),
 (33, 19, 30000000, 6, 6, 5, 5000000, 1, '2022-06-20'),
-(39, 19, 10000000, 12, 12, 0, 833333, 2, '2022-07-03');
+(39, 19, 10000000, 12, 12, 0, 833333, 2, '2022-07-03'),
+(40, 17, 20000000, 12, 12, 0, 1666667, 2, '2022-07-10');
 
 -- --------------------------------------------------------
 
@@ -274,7 +275,7 @@ ALTER TABLE `conversation`
 -- AUTO_INCREMENT for table `dept`
 --
 ALTER TABLE `dept`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `payment`

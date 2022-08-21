@@ -1,0 +1,10 @@
+.link{
+
+    border: none;
+    background-color: white;
+    color:#007bff;
+    cursor: pointer;
+}
+.link :hover{
+    color:#0166d1;
+}

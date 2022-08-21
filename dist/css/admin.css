@@ -1,0 +1,19 @@
+.backRed{
+    background-color: red;
+}
+
+.backGreen{
+    background-color: green;
+}
+
+.backBlue{
+    background-color: blue;
+}
+
+.backYellow{
+    background-color: yellow;
+}
+
+.backGreen50Op{
+    background-color: rgba(0, 128, 0, 0.5);
+}

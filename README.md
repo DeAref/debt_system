@@ -2,7 +2,7 @@
 Debt System | Create an account, get a Debt, pay the installments. Or give Debt, have statistics and manage users
 
 <div dir='rtl' align='right'>
-  
+<h1>سامانه دریافت وام</h1>
 <h1>فهرست</h1>
 <ul>
 <li><a href="#howtoinstall">نحوه نصب</a>

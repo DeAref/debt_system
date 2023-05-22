@@ -3,6 +3,7 @@ Debt System | Create an account, get a Debt, pay the installments. Or give Debt,
 
 <div dir='rtl' align='right'>
 <h1>سامانه دریافت وام</h1>
+  <div id="50344496178"><script type="text/JavaScript" src="https://www.aparat.com/embed/qv7Ce?data[rnddiv]=50344496178&data[responsive]=yes"></script></div>
 <h1>فهرست</h1>
 <ul>
 <li><a href="#howtoinstall">نحوه نصب</a>

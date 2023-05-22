@@ -1,9 +1,10 @@
 # debt_system
 Debt System | Create an account, get a Debt, pay the installments. Or give Debt, have statistics and manage users
+![image](https://github.com/DeAref/debt_system/assets/95649368/a9c398eb-38aa-4912-a07c-bdd15f926cf1)
 
 <div dir='rtl' align='right'>
 <h1>سامانه دریافت وام</h1>
-  <div id="50344496178"><script type="text/JavaScript" src="https://www.aparat.com/embed/qv7Ce?data[rnddiv]=50344496178&data[responsive]=yes"></script></div>
+  ویدیو دمو: https://www.aparat.com/v/qv7Ce
 <h1>فهرست</h1>
 <ul>
 <li><a href="#howtoinstall">نحوه نصب</a>

@@ -1,4 +1,4 @@
-# debt_system
+# سامانه مدیریت وام
 Debt System | Create an account, get a Debt, pay the installments. Or give Debt, have statistics and manage users سورس پروژه مدیریت وام و اقساط - php
 ![image](https://github.com/DeAref/debt_system/assets/95649368/a9c398eb-38aa-4912-a07c-bdd15f926cf1)
 

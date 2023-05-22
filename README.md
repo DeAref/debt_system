@@ -1,10 +1,11 @@
 # debt_system
-Debt System | Create an account, get a Debt, pay the installments. Or give Debt, have statistics and manage users
+Debt System | Create an account, get a Debt, pay the installments. Or give Debt, have statistics and manage users سورس پروژه مدیریت وام و اقساط - php
 ![image](https://github.com/DeAref/debt_system/assets/95649368/a9c398eb-38aa-4912-a07c-bdd15f926cf1)
 
 <div dir='rtl' align='right'>
-<h1>سامانه دریافت وام</h1>
+<h1>پروژه سامانه مدیریت وام</h1>
   ویدیو دمو: https://www.aparat.com/v/qv7Ce
+این پروژه رو برای درس "پروژه" کاردانی نرم افزار نوشته بودم که گفتم پابلیک کنم بقیه هم استفاده کنن
 <h1>فهرست</h1>
 <ul>
 <li><a href="#howtoinstall">نحوه نصب</a>

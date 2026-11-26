@@ -17,11 +17,17 @@ if($row["allDebts"] > 0) {
 // All paid amounts
 //----------------------
 $allPayed = 0;
-$stmt = mysqli_prepare($conn, "SELECT SUM(amountPerMonth * payed) as totalPaid FROM `dept`");
+$stmt = mysqli_prepare($conn, "SELECT amountPerMonth,payed FROM `dept`");
 mysqli_stmt_execute($stmt);
 $result = mysqli_stmt_get_result($stmt);
-$row = mysqli_fetch_assoc($result);
-$allPayed = $row["totalPaid"] ?? 0;
+
+if(mysqli_num_rows($result) > 0) {
+    while($row = mysqli_fetch_assoc($result)) {
+        $payedInWhile = $row["payed"];
+        $amountPerMonthInWhile = $row['amountPerMonth'];
+        $allPayed += ($payedInWhile * $amountPerMonthInWhile);
+    }
+}
 
 // Total number of debts
 //----------------------
@@ -125,11 +131,10 @@ $allIdsActive = $row['ids'];
                             <span class="info-box-text">کاربران</span>
                             <span class="info-box-number">
                                 <?php
-                                $stmt = mysqli_prepare($conn, "SELECT COUNT(*) as count FROM `user`");
+                                $stmt = mysqli_prepare($conn, "SELECT * FROM `user`");
                                 mysqli_stmt_execute($stmt);
                                 $result = mysqli_stmt_get_result($stmt);
-                                $row = mysqli_fetch_assoc($result);
-                                echo $row['count'];
+                                echo mysqli_num_rows($result);
                                 ?>
                             </span>
                         </div>
@@ -262,12 +267,14 @@ $allIdsActive = $row['ids'];
                                         <?php
                                         // List of debts 
                                         //----------------------
-                                        $stmt = mysqli_prepare($conn, "SELECT dept.`id`,`deptValue`,`date`,`status`,`monthCount`,`unPayed`,`payed`,`user`.`name` FROM dept INNER JOIN `user` ON dept.user_id=user.id ORDER BY `dept`.`date` DESC LIMIT 6");
+                                        $counter = 0;
+                                        $stmt = mysqli_prepare($conn, "SELECT dept.`id`,`deptValue`,`date`,`status`,`monthCount`,`unPayed`,`payed`,`user`.`name` FROM dept INNER JOIN `user` ON dept.user_id=user.id ORDER BY `dept`.`date` DESC");
                                         mysqli_stmt_execute($stmt);
                                         $result = mysqli_stmt_get_result($stmt);
                                         
                                         if(mysqli_num_rows($result) > 0) {
-                                            while($row = mysqli_fetch_assoc($result)) {
+                                            while($counter < 6 && $row = mysqli_fetch_assoc($result)) {
+                                                $counter++;
                                                 $id = $row["id"];
                                                 $deptValue = number_format($row["deptValue"]);
                                                 $date = $row["date"];

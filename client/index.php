@@ -1,6 +1,24 @@
 <?php
 session_start();
 include '../library/header.php';
+
+// Get user statistics using prepared statements
+$stmt = $conn->prepare("SELECT 
+    COALESCE(SUM(d.deptValue), 0) as totalDept,
+    COUNT(d.id) as debtCount,
+    COALESCE(SUM(d.payed), 0) as totalPayed,
+    COALESCE(SUM(d.monthCount), 0) as totalMonthCount,
+    COALESCE(SUM(d.unPayed), 0) as totalUnPayed
+FROM dept d 
+WHERE d.user_id = ?");
+$stmt->bind_param("i", $user_id);
+$stmt->execute();
+$stats = $stmt->get_result()->fetch_assoc();
+
+$totalDept = $stats['totalDept'];
+$debtCount = $stats['debtCount'];
+$paymentPercentage = ($stats['totalMonthCount'] > 0) ? round(($stats['totalPayed'] * 100) / $stats['totalMonthCount']) : 0;
+$totalUnPayed = $stats['totalUnPayed'];
 ?>
 
 <!-- Content Wrapper. Contains page content -->
@@ -32,21 +50,7 @@ include '../library/header.php';
                     <!-- small box -->
                     <div class="small-box bg-info">
                         <div class="inner">
-                            <?php
-                            // get user all debts
-                            //----------------------
-                            $sumDeptValue = 0;
-                            $stmt = mysqli_prepare($conn, "SELECT SUM(deptValue) as total FROM `dept` WHERE `user_id`=?");
-                            mysqli_stmt_bind_param($stmt, "i", $user_id);
-                            mysqli_stmt_execute($stmt);
-                            $result = mysqli_stmt_get_result($stmt);
-                            $row = mysqli_fetch_assoc($result);
-                            
-                            if($row["total"] > 0) {
-                                $sumDeptValue = $row["total"];
-                            }
-                            ?>
-                            <h4><?php echo number_format($sumDeptValue)." تومان"; ?></h4>
+                            <h4><?php echo number_format($totalDept) . " تومان"; ?></h4>
                             <p>کل پول وام های شما</p>
                         </div>
                         <div class="icon">
@@ -60,17 +64,7 @@ include '../library/header.php';
                     <!-- small box -->
                     <div class="small-box bg-warning">
                         <div class="inner">
-                            <?php
-                            // get count of dept
-                            //----------------------
-                            $stmt = mysqli_prepare($conn, "SELECT COUNT(id) as count FROM `dept` WHERE `user_id`=?");
-                            mysqli_stmt_bind_param($stmt, "i", $user_id);
-                            mysqli_stmt_execute($stmt);
-                            $result = mysqli_stmt_get_result($stmt);
-                            $row = mysqli_fetch_assoc($result);
-                            $countOfdept = $row["count"];
-                            ?>
-                            <h3><?php echo $countOfdept; ?></h3>
+                            <h3><?php echo $debtCount; ?></h3>
                             <p>تعداد وام ها</p>
                         </div>
                         <div class="icon">
@@ -84,25 +78,7 @@ include '../library/header.php';
                     <!-- small box -->
                     <div class="small-box bg-success">
                         <div class="inner">
-                            <?php
-                            // get user payment statistics
-                            //----------------------
-                            $stmt = mysqli_prepare($conn, "SELECT SUM(payed) as totalPayed, SUM(monthCount) as totalMonth FROM `dept` WHERE `user_id`=?");
-                            mysqli_stmt_bind_param($stmt, "i", $user_id);
-                            mysqli_stmt_execute($stmt);
-                            $result = mysqli_stmt_get_result($stmt);
-                            $row = mysqli_fetch_assoc($result);
-                            
-                            $sumPayed = $row["totalPayed"] ?? 0;
-                            $sumMonthCount = $row["totalMonth"] ?? 0;
-                            ?>
-                            <h3><?php 
-                            if($sumMonthCount > 0) { 
-                                echo round(($sumPayed*100)/$sumMonthCount); 
-                            } else {
-                                echo "0";
-                            }  
-                            ?><sup style="font-size: 20px">%</sup></h3>
+                            <h3><?php echo $paymentPercentage; ?><sup style="font-size: 20px">%</sup></h3>
                             <p>اقساط پرداخت شده</p>
                         </div>
                         <div class="icon">
@@ -115,15 +91,7 @@ include '../library/header.php';
                 <div class="col-lg-3 col-6">
                     <div class="small-box bg-danger">
                         <div class="inner">
-                            <?php
-                            $stmt = mysqli_prepare($conn, "SELECT SUM(unPayed) as totalUnPayed FROM `dept` WHERE `user_id`=?");
-                            mysqli_stmt_bind_param($stmt, "i", $user_id);
-                            mysqli_stmt_execute($stmt);
-                            $result = mysqli_stmt_get_result($stmt);
-                            $row = mysqli_fetch_assoc($result);
-                            $sumUnPayed = $row["totalUnPayed"] ?? 0;
-                            ?>
-                            <h3><?php echo $sumUnPayed; ?><sup style="font-size: 20px">ماه</sup></h3>
+                            <h3><?php echo $totalUnPayed; ?><sup style="font-size: 20px">ماه</sup></h3>
                             <p>کل اقساط مانده</p>
                         </div>
                         <div class="icon">

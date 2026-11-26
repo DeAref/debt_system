@@ -4,7 +4,7 @@ require_once 'AdminAuthService.php';
 
 if(isset($_POST['loginAdmin']))
 {
-    $username = "aref"; // This is hardcoded for now, but should be changed to accept input
+    $username = $_POST['username'];
     $password = $_POST['password'];
     $authService = new AdminAuthService();
     $loginMessage = $authService->login($username, $password);

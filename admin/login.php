@@ -1,31 +1,21 @@
 <?php
 session_start();
+require_once 'AdminAuthService.php';
 
 if(isset($_POST['loginAdmin']))
 {
-    $password = md5($_POST['password']);
-    //$conn=mysqli_connect("localhost","root","","deptsystem");
-    include 'config.php';
-    $query = "SELECT * FROM `admin` WHERE `username`='aref' AND `password`='$password'";
-    $result = mysqli_query($conn,$query);
-
-    if(mysqli_num_rows($result) > 0)
-    {
-        $_SESSION['adminUserName']= "aref";
-        $_SESSION['ValidationAdmin']= "true";
-        header("Location: index.php");
-    }else{
-
-        echo "<div class='callout callout-danger'>user name or password not correct</div>";
-        unset($_SESSION['ValidationAdmin']);
-        echo "<audio src='http://freesoundeffect.net/sites/default/files/incorrect-answer--6-sound-effect-99679566.mp3' autoplay ></audio>";
+    $username = "aref"; // This is hardcoded for now, but should be changed to accept input
+    $password = $_POST['password'];
+    $authService = new AdminAuthService();
+    $loginMessage = $authService->login($username, $password);
+    if ($loginMessage) {
+        echo "<div class='callout callout-danger'>" . $loginMessage . "</div>";
     }
-
-
 }
 
 if(isset($_SESSION['ValidationAdmin'])){
   header("Location: index.php");
+  exit;
 }
 
 ?>

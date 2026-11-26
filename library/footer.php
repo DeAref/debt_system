@@ -1,5 +1,5 @@
 <footer class="main-footer">
-    <strong>CopyRight &copy; 2022 <a href="http://github.com/DeAref/">Aref Solaimany</a>.</strong>
+    <strong>CopyRight &copy; 2024 <a href="http://github.com/DeAref/">Aref Solaimany</a>.</strong>
 </footer>
 
 <!-- Control Sidebar -->

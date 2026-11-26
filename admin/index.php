@@ -1,49 +1,12 @@
 <?php
 include 'header.php';
+include 'functions.php';
 
-// All debts sum
-//----------------------
-$stmt = mysqli_prepare($conn, "SELECT SUM(`deptValue`) as `allDebts` FROM `dept`");
-mysqli_stmt_execute($stmt);
-$result = mysqli_stmt_get_result($stmt);
-$row = mysqli_fetch_assoc($result);
-
-if($row["allDebts"] > 0) {
-    $allDebt = $row["allDebts"];
-} else {
-    $allDebt = 0;
-}
-
-// All paid amounts
-//----------------------
-$allPayed = 0;
-$stmt = mysqli_prepare($conn, "SELECT amountPerMonth,payed FROM `dept`");
-mysqli_stmt_execute($stmt);
-$result = mysqli_stmt_get_result($stmt);
-
-if(mysqli_num_rows($result) > 0) {
-    while($row = mysqli_fetch_assoc($result)) {
-        $payedInWhile = $row["payed"];
-        $amountPerMonthInWhile = $row['amountPerMonth'];
-        $allPayed += ($payedInWhile * $amountPerMonthInWhile);
-    }
-}
-
-// Total number of debts
-//----------------------
-$stmt = mysqli_prepare($conn, "SELECT COUNT(`id`) AS `ids` FROM dept");
-mysqli_stmt_execute($stmt);
-$result = mysqli_stmt_get_result($stmt);
-$row = mysqli_fetch_assoc($result);
-$allIds = $row['ids'];
-
-// Active debts count
-//----------------------
-$stmt = mysqli_prepare($conn, "SELECT COUNT(`id`) AS `ids` FROM dept WHERE `status`=1");
-mysqli_stmt_execute($stmt);
-$result = mysqli_stmt_get_result($stmt);
-$row = mysqli_fetch_assoc($result);
-$allIdsActive = $row['ids'];
+$allDebt = getAllDebtsSum($conn);
+$allPayed = getAllPaidAmounts($conn);
+$allIds = getTotalDebtsCount($conn);
+$allIdsActive = getActiveDebtsCount($conn);
+$userCount = getUserCount($conn);
 ?>
 
 <!-- Content Wrapper. Contains page content -->

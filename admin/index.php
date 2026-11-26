@@ -230,14 +230,10 @@ $userCount = getUserCount($conn);
                                         <?php
                                         // List of debts 
                                         //----------------------
-                                        $counter = 0;
-                                        $stmt = mysqli_prepare($conn, "SELECT dept.`id`,`deptValue`,`date`,`status`,`monthCount`,`unPayed`,`payed`,`user`.`name` FROM dept INNER JOIN `user` ON dept.user_id=user.id ORDER BY `dept`.`date` DESC");
-                                        mysqli_stmt_execute($stmt);
-                                        $result = mysqli_stmt_get_result($stmt);
+                                        $debts = getLatestDebts($conn);
                                         
-                                        if(mysqli_num_rows($result) > 0) {
-                                            while($counter < 6 && $row = mysqli_fetch_assoc($result)) {
-                                                $counter++;
+                                        if(count($debts) > 0) {
+                                            foreach($debts as $row) {
                                                 $id = $row["id"];
                                                 $deptValue = number_format($row["deptValue"]);
                                                 $date = $row["date"];

@@ -63,6 +63,7 @@ if(isset($_SESSION['ValidationAdmin'])){
     <!-- lockscreen credentials (contains the form) -->
     <form class="lockscreen-credentials" action="" method="post">
       <div class="input-group">
+        <input type="text" name="username" class="form-control" placeholder="نام کاربری" value="aref">
         <input type="password" name="password" class="form-control" placeholder="رمز عبور">
 
         <div class="input-group-append">

@@ -25,11 +25,11 @@
 
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>پنل مدیریت | داشبورد اول</title>
+    <title>پنل کاربر | داشبورد</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
@@ -56,7 +56,30 @@
     <link rel="stylesheet" href="../dist/css/bootstrap-rtl.min.css">
     <!-- template rtl version -->
     <link rel="stylesheet" href="../dist/css/custom-style.css">
-
+    
+    <style>
+        body {
+            font-family: 'Vazir', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .brand-text, .nav-link, .breadcrumb-item, .small-box h3, .info-box-text, .description-text {
+            font-family: 'Vazir', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .main-header .navbar-nav .nav-link {
+            padding: 0.5rem 1rem;
+        }
+        .user-panel .info {
+            text-align: right;
+        }
+        .sidebar .nav-link p {
+            margin-right: 5px;
+        }
+        .small-box .icon {
+            top: 10px;
+        }
+        .content-header h1 {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -135,7 +158,7 @@
         <a href="index3.html" class="brand-link">
             <img src="../dist/img/bank-flat.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
                  style="opacity: .8">
-            <span class="brand-text font-weight-light">پنل مدیریت</span>
+            <span class="brand-text font-weight-light">پنل کاربر</span>
         </a> 
 
         <!-- Sidebar -->

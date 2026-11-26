@@ -1,38 +1,27 @@
 <?php
+
 class Database {
-    private $host = "localhost";
-    private $username = "ipir_debt";
-    private $password = "nqg[M0=g}Sr(";
-    private $dbname = "ipir_debt";
-    private $conn;
+    private $host = 'localhost';
+    private $user = 'ipir_debt';
+    private $password = 'nqg[M0=g}Sr(';  
+    private $db_name = 'ipir_debt';
+    private $connection;
 
     public function __construct() {
-        try {
-            $this->conn = new mysqli($this->host, $this->username, $this->password, $this->dbname);
-            
-            if ($this->conn->connect_error) {
-                throw new Exception("Connection failed: " . $this->conn->connect_error);
-            }
-            
-            // Set charset to UTF-8
-            $this->conn->set_charset("utf8");
-        } catch (Exception $e) {
-            die("Database connection error: " . $e->getMessage());
+        $this->connect();
+    }
+
+    private function connect() {
+        $this->connection = new mysqli($this->host, $this->user, $this->password, $this->db_name);
+        if ($this->connection->connect_error) {
+            die('Connection failed: ' . $this->connection->connect_error);
         }
+        $this->connection->set_charset('utf8');
     }
 
     public function getConnection() {
-        return $this->conn;
-    }
-
-    public function prepare($sql) {
-        return $this->conn->prepare($sql);
-    }
-
-    public function close() {
-        if ($this->conn) {
-            $this->conn->close();
-        }
+        return $this->connection;
     }
 }
+
 ?>

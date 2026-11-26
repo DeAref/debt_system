@@ -56,7 +56,7 @@ include "../library/header.php";
                                     <?php
                                     // Get user debts
                                     //----------------------
-                                    $stmt = mysqli_prepare($conn, "SELECT `id`,`deptValue`,`date`,`status`,`monthCount` FROM `dept` WHERE `user_id`=? ORDER BY `date` DESC");
+                                    $stmt = mysqli_prepare($conn, "SELECT `id`,`deptValue`,`date`,`status`,`monthCount` FROM `dept` WHERE `user_id`=?");
                                     mysqli_stmt_bind_param($stmt, "i", $user_id);
                                     mysqli_stmt_execute($stmt);
                                     $result = mysqli_stmt_get_result($stmt);
